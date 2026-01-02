@@ -240,7 +240,8 @@ void DeviceNetConfigCmdUpEncoder::getEncodingParams(NetworkAdapter type, uint8_t
     case NetworkAdapter::CATM1:    *typeID = 5; *paramsNum = 2; break;
     case NetworkAdapter::ETHERNET: *typeID = 6; *paramsNum = 4; break;
     case NetworkAdapter::CELL:     *typeID = 7; *paramsNum = 2; break;
-    case NetworkAdapter::NOTECARD: *typeID = 8; *paramsNum = 0; break;
+// NOTECARD support has been deleted
+//    case NetworkAdapter::NOTECARD: *typeID = 8; *paramsNum = 0; break; 
     default:                       *typeID = 0; *paramsNum = 0; break;
   }
 }
